@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title> Minimalismo </title>
+		<link rel="stylesheet" href="aero.css">
+		<style>
+
+*{
+	transition: 5s;
+}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="main">
+			<h1>Minimalismo.</h1>
+			<p>"Filosofia de vida que busca focar no essencial, reduzindo o excesso de bens materiais, distrações e compromissos para priorizar o que realmente agrega valor, como propósito, experiências e relacionamentos, resultando em mais liberdade, clareza e bem-estar, e não em privação ou falta de conforto, mas em escolhas conscientes. "</p>
+		</div>
+		 <button onclick="change_theme()"><h3>Mudar tema</h3></button>
+		<script>
+var theme = 0
+var div = document.getElementById('main')
+
+function change_theme(){ // just in case I do more than one paragraph
+	console.log(2)
+	if(theme == 0){
+		for(el of ['h1','p']){
+			for(i of document.getElementsByTagName(el)){
+				i.classList.add('frutiger_clear')
+				i.classList.remove('frutiger_dark')
+			}
+		}
+		div.className = 'clear_div'
+		theme = 1
+	}else{
+		for(el of ['h1','p']){
+			for(i of document.getElementsByTagName(el)){
+				i.classList.add('frutiger_dark')
+				i.classList.remove('frutiger_clear')
+			}
+		}
+		div.className = 'dark_div'
+		theme = 0
+	}
+}
+
+change_theme()
+		</script>
+	</body>
+</html>
