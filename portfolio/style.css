@@ -1,0 +1,105 @@
+/* Reference colors #353535 #FAFAFA #7d1cff #dbc2fc */
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-image: linear-gradient(to bottom, #00001a,#3b3c7d);
+	background-attachment: fixed;
+}
+
+@font-face {
+  font-family: 'bitcount'; /* Choose a name for your font */
+  src: url('fonts/bitcount.ttf') format('truetype'), /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Start */
+
+#start{
+	margin: 10% auto auto 10%;
+}
+
+.subtitle{ /* lol */
+	font-family: bitcount, monospace;
+	font-weight: 500;
+	color: #FAFAFA;
+}
+
+.rainbow{
+	color: transparent;
+	background-clip: text;
+	animation: rainbow-anim 3s infinite;
+}
+
+
+#title{
+	transition: 1s;
+	margin-top: 0;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 10em;
+	background-image: linear-gradient(to right, #fcba03,#fce803);
+	color: transparent;
+	background-clip: text;
+	animation: boot-anim 1s 1;
+}
+
+#title:hover{
+	transition: ease-out 1s;
+	font-size: 11em;
+	color: #fced03;
+	transform: translate(0, 3px)
+}
+
+@keyframes boot-anim{
+	0% {transform: translate(0, 15px)}
+	
+	100% {transform: translate(0, 0px)}
+}
+
+@keyframes rainbow-anim{
+	0% {background-image: linear-gradient(red,orange,yellow,green)}
+	25% {background-image: linear-gradient(yellow,green,blue,indigo)}
+	50% {background-image: linear-gradient(green,blue,indigo,violet)}
+	75% {background-image: linear-gradient(indigo,violet,red,orange)}
+	100% {background-image: linear-gradient(red,orange,yellow,green)}
+}
+/* Background */
+
+svg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display:  block;
+	margin: 0;
+	z-index: -1;
+}
+
+circle{
+	fill: white;
+	animation: pulse_star 6s infinite;
+}
+
+@keyframes pulse_star{
+	0% {fill: #dbc2fc}
+	50% {fill: #7d1cff}
+	100% {fill: #dbc2fc}
+}
+
+/* Items */
+
+#pick{
+	margin 0;
+	width: 100%;
+}
+
+.item{
+	display: inline-block;
+	margin: 0 10%;
+}
+
+.show_me{
+	display: flex;
+}

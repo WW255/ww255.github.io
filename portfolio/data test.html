@@ -1,0 +1,73 @@
+<head>
+  <style>
+c{
+  background: red;
+  font-family: sans-serif;
+  color: red;
+}
+  </style>
+</head>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  async function getData() {
+    const url = "https://www.codewars.com/api/v1/users/WW255";
+    let response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result
+  }
+
+
+  async function create_chart(){
+    info = {ranks: {languages: {javascript: {score: 30}, python: {score: 300}}}} //await getData()
+    const javascript = info.ranks.languages.javascript
+    const python = info.ranks.languages.python
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Javascript','Python','Average'],
+        datasets: [{
+          label: '# of Votes',
+          data: [javascript.score,python.score,(javascript.score+python.score)/2],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          r: {
+            backgroundColor: "blue",
+            grid: {
+              color: "red",
+            },
+            pointLabels: {
+              color: "blue",  // cor dos labels ao redor do círculo
+              font: {
+                size: 14,
+                weight: "bold"
+              }
+            },
+            ticks: {
+              color: "green",   // cor dos números da escala
+              backdropColor: "transparent" // remove a caixinha de fundo cinza
+            }
+          }
+        }
+      }
+    });
+  }
+
+  create_chart()
+
+
+</script>
