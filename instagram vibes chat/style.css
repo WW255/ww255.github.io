@@ -25,6 +25,12 @@ body{
 	display: block;
 }
 
+@media (max-width: 800px){
+	#frame{
+		width: 100% !important;
+	}
+}
+
 /* TOP HALF */
 #top-bar{
 	width: 100%; height: 8vh;
@@ -173,4 +179,5 @@ input{
 @keyframes spin{
 	0%{transform: rotate(-45deg);}
 	100%{transform: rotate(0deg);}
+
 }
