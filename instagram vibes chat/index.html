@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>/</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="messages.css">
+	</head>
+	<body>
+		<div id="frame">
+			<div id="top-bar">
+				<img src="assets/arrow.svg">
+				<div id="contact">
+					<img src="assets/pfp.svg">
+					<div id="user-lastseen">
+						<h1>itz.fulanx</h1>
+						<h3>Online há 9 anos</h3>
+					</div>
+				</div>
+				<div id="far-right">
+					<img src="assets/video-call.svg">
+					<img src="assets/about.svg">
+				</div>
+			</div>
+			<div id="chat">
+				<p id="time">Hoje 00:61<p>
+				<div class="my-msg">
+					<div class="msg-container">
+						<div class="msg-text">
+							<p>br roube um brainrot?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hotbar-container">
+				<div id="hotbar">
+					<div id="left_side" class="camera">
+						<img src="assets/camera.svg">
+					</div>
+					<input id="main_input" type="text" placeholder="Mensagem..."></input>
+					<div id="right_side">
+						<div id="images">
+							<img src="assets/microphone.svg">
+							<img src="assets/picture.svg">
+							<img src="assets/sticker.svg">
+							<img src="assets/circle.svg">
+						</div>
+						<div id="send_button" style="display: none;" onclick="addMsg()">
+							<button><img src="assets/paper_plane.svg"></img></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="toggle.js"></script>
+		<script src="messages.js"></script>
+	</body>
+</html>

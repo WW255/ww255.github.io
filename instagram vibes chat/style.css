@@ -1,0 +1,176 @@
+body{
+	width: 100%;height: 100%; margin: 0;
+ 	font-family: sans-serif;
+ 	background: #111;
+ 	color: #FFF;
+ 	display: flex;
+ 	justify-content: center;
+ 	overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/Roboto.ttf') format('truetype');
+}
+
+*{
+	font-family: 'Roboto';
+}
+
+#frame{
+	width: 30vw;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	display: block;
+}
+
+/* TOP HALF */
+#top-bar{
+	width: 100%; height: 8vh;
+	box-sizing: border-box;
+	top: 0;
+	position: absolute;
+	padding: 0 5% 0 5%;
+	background-color: #000;
+	display: flex;
+	flex-direction: right;
+	align-items: center;
+}
+
+#contact{
+	display: flex;
+	flex-direction: right;
+	align-items: center;
+	margin-left: 2vw;
+	gap: 1vw;
+}
+
+#contact img{
+	background-color: white;
+	clip-path: circle(50%);
+}
+
+#user-lastseen{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+#user-lastseen h1{
+	font-size: 1em;
+	font-weight: 600;
+	margin: 0;
+}
+
+#user-lastseen h3{
+	font-size: 0.75em;
+	font-weight: 400;
+	color: lightgray;
+	margin: 0;
+}
+
+#far-right{
+	display: flex;
+	flex-direction: right;
+	margin-left: auto;
+	align-items: center;
+	gap: 1vw;
+}
+
+/* MIDDLE */
+
+#chat{
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	transform: translateY(10%);
+	padding: 0 2vw;
+}
+
+
+/* BOTTOM HALF */
+#hotbar-container{
+	width: 100%;
+	box-sizing: border-box;
+	bottom: 3vh;
+	position: absolute;
+	padding: 0 5% 0 5%;
+}
+
+#hotbar{
+	width: 100%;
+	display: flex;
+	flex-direction: right;
+	background-color: #252525;
+	border-radius: 20em;
+}
+
+#left_side{
+	width: 3vw; height: 3vw;
+	clip-path: circle(50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1vh;
+}
+
+.camera{
+	background: #0892F5;
+	--background: radial-gradient(circle,rgba(8, 146, 245, 1) 0%, rgba(0, 141, 241, 1) 50%, rgba(8, 146, 245, 1) 100%);
+}
+
+.magnifying_glass{
+	background: #FFF;
+}
+
+#right_side{
+	display: flex;
+	margin-left: auto;
+	margin-right: 1.5vw;
+}
+
+#images{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: .5vw;
+}
+
+#send_button{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+button{
+	border: none;
+	outline: none;
+	background-color: #4169E1;
+	border-radius: 3em;
+	height: 50%;
+	width: 100%;
+}
+
+img{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+input{
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	color: white;
+	font-weight: 500;
+	min-width: 25%;
+	width: fit-content;
+}
+
+@keyframes spin{
+	0%{transform: rotate(-45deg);}
+	100%{transform: rotate(0deg);}
+}

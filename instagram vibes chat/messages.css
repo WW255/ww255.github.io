@@ -1,0 +1,54 @@
+#time{
+	width: 100%;
+	text-align: center;
+	font-size: 0.75em;
+	color: lightgray;
+}
+
+
+.my-msg{
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	margin-bottom: .5vh;
+	animation: spawn 0.2s;
+}
+
+
+.msg-container{
+	width: fit-content;
+	max-width: 50%;
+}
+
+.msg-text p{
+	margin: .2vw;
+	font-size: 1em;
+	text-align: right;
+
+}
+
+.my-msg div{
+	padding: .5vh .5vw;
+	text-align: left;
+	border-radius: 2rem;
+	background-color: #C13584;
+	background-image: linear-gradient(
+	  to top,
+	  #4169E1,
+	  #6A68D7,
+	  #9966CB,
+	  #A25BBB,
+	  #C13584
+	);
+	background-size: 100% 1000%;
+	background-repeat: no-repeat;
+}
+
+.first{
+	border-bottom-right-radius: 0;
+}
+
+@keyframes spawn{
+	0% {transform: translateY(10%);}
+	100% {transform: translateY(0);}
+}
