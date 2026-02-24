@@ -18,17 +18,11 @@ body{
 }
 
 #frame{
-	width: 100%;
+	width: 32vw;
 	height: 100%;
 	background-color: #000;
 	position: absolute;
 	display: block;
-}
-
-@media screen and (min-width: 1000px){
-	#frame{
-		width: 30vw !important;
-	}
 }
 
 /* TOP HALF */
@@ -93,6 +87,8 @@ body{
 	height: 100%;
 	transform: translateY(10%);
 	padding: 0 2vw;
+	overflow: auto;
+	scrollbar-width: none;
 }
 
 

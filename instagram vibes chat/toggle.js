@@ -27,3 +27,9 @@ input.addEventListener('input', (e) => {
     	normal()
     }
 });
+
+input.addEventListener('keydown', function(e) {
+    if (event.key === 'Enter') {
+    	addMsg()
+    }
+});
