@@ -34,13 +34,13 @@ body{
 	padding: 0 5% 0 5%;
 	background-color: #000;
 	display: flex;
-	flex-direction: right;
+	flex-direction: row;
 	align-items: center;
 }
 
 #contact{
 	display: flex;
-	flex-direction: right;
+	flex-direction: row;
 	align-items: center;
 	margin-left: 2vw;
 	gap: 1vw;
@@ -75,7 +75,7 @@ body{
 
 #far-right{
 	display: flex;
-	flex-direction: right;
+	flex-direction: row;
 	margin-left: auto;
 	align-items: center;
 	gap: 1vw;
@@ -113,7 +113,7 @@ body{
 #hotbar{
 	width: 100%;
 	display: flex;
-	flex-direction: right;
+	flex-direction: row;
 	background-color: #252525;
 	border-radius: 20em;
 }

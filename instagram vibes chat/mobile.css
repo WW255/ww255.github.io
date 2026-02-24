@@ -10,6 +10,9 @@
 		justify-content: center;
 		margin: 1vh;
 	}
+	#far-right{
+		gap: 3vw !important;
+	}
 	#contact img{
 		width: 8.4vw;
 		height: 8.4vw;
