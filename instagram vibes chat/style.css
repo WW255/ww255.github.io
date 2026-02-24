@@ -93,6 +93,14 @@ body{
 	overflow-x: hidden;
 }
 
+.pfp-msg{
+	background-color: #FFF;
+	width: 2vw; height: 2vw;
+	clip-path: circle(50%);
+	margin-right: .25vw;
+	transform: translateY(1.5vh);
+}
+
 /* BOTTOM HALF */
 #hotbar-container{
 	width: 100%;
