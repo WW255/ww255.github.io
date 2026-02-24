@@ -14,6 +14,22 @@
 	animation: spawn 0.2s;
 }
 
+.their-msg{
+	display: flex;
+	margin: 0;
+	margin-bottom: .5vh;
+}
+
+.their-msg div{
+	display: flex;
+	margin: 0;
+	margin-bottom: .5vh;
+	background: #222;
+	padding: .5vh .5vw;
+	text-align: left;
+	border-radius: 2rem;
+}
+
 
 .msg-container{
 	width: fit-content;
@@ -30,9 +46,8 @@
 
 .my-msg div{
 	padding: .5vh .5vw;
-	text-align: left;
+	text-align: right;
 	border-radius: 2rem;
-
 	background-size: 100% 1000%;
 	background-repeat: no-repeat;
 }

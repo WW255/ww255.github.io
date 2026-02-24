@@ -13,7 +13,7 @@ function addMsg(){
 	p.textContent = input.value
 	
 	align_div.className = "my-msg"
-	container_div.className = "msg-container"
+	container_div.className = "msg-container my"
 	text_div.className = "msg-text"
 
 	text_div.appendChild(p)
@@ -44,7 +44,7 @@ function interpolateColor(start, end, factor) {
 }
 
 function updateColors() {
-  const messages = document.querySelectorAll('.msg-container');
+  const messages = document.querySelectorAll('.msg-container.my');
   const screenHeight = window.innerHeight;
 
   messages.forEach(msg => {
