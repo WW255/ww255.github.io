@@ -21,7 +21,7 @@ body{
 	width: 32vw;
 	height: 100%;
 	background-color: #000;
-	position: absolute;
+	position: fixed;
 	display: block;
 }
 
@@ -87,7 +87,7 @@ body{
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	padding: 10vh 2vw 15vh 2vw;
+	padding: 1vh 2vw 25vh 2vw;
 	overflow: auto;
 	scrollbar-width: none;
 	overflow-x: hidden;
