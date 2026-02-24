@@ -10,17 +10,21 @@
 		justify-content: center;
 		margin: 1vh;
 	}
+	#contact img{
+		width: 8.4vw;
+		height: 8.4vw;
+	}
 	#user-lastseen h1{
-		font-size: 2em;
+		font-size: 1.2em;
 		font-weight: 600;
 	}
 	
 	#user-lastseen h3{
-		font-size: 1.5em;
+		font-size: 1em;
 		font-weight: 400;
 	}
 	#time{
-		font-size: 1.3em !important;
+		font-size: .8em !important;
 	}
 	img{
 		display: inline-block;
@@ -29,13 +33,13 @@
 	}
 	.msg-text p{
 		margin: .2vw;
-		font-size: 2.3em !important;
+		font-size: 1.1em !important;
 		text-align: right;
 	}
 	.my-msg div{
 		padding: .6vh 1vw !important;
 	}
 	input{
-		font-size: 2em !important;
+		font-size: 1em !important;
 	}
 }

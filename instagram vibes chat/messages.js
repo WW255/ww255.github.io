@@ -22,6 +22,7 @@ function addMsg(){
 
 	chat.appendChild(align_div)
 	input.value = ""
+
 	normal()
 	updateColors()
 }
