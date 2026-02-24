@@ -32,7 +32,7 @@
 		height: 6vw;
 	}
 	.msg-text p{
-		margin: .2vw;
+		margin: .25vw .5vw  !important;
 		font-size: 1.1em !important;
 		text-align: right;
 	}
@@ -41,5 +41,12 @@
 	}
 	input{
 		font-size: 1em !important;
+	}
+	#images{
+		gap: 3vw;
+		margin-right: 3vw;
+	}
+	button{
+		width: 10vw;
 	}
 }
