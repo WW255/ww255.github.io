@@ -18,16 +18,16 @@ body{
 }
 
 #frame{
-	width: 30vw;
+	width: 100%;
 	height: 100%;
 	background-color: #000;
 	position: absolute;
 	display: block;
 }
 
-@media (max-width: 800px){
+@media screen and (min-width: 768px){
 	#frame{
-		width: 100% !important;
+		width: 30vw !important;
 	}
 }
 
@@ -179,5 +179,4 @@ input{
 @keyframes spin{
 	0%{transform: rotate(-45deg);}
 	100%{transform: rotate(0deg);}
-
 }
