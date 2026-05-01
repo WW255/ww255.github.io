@@ -9,14 +9,14 @@ body{
 
 @font-face {
   font-family: 'frutiger'; /* Choose a name for your font */
-  src: url('fonts/frutiger.ttf') format('truetype'); /* Path to your font file */
+  src: url('fonts/Frutiger.ttf') format('truetype'); /* Path to your font file */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'frutiger bold'; /* Choose a name for your font */
-  src: url('fonts/frutiger_bold.ttf') format('truetype'); /* Path to your font file */
+  src: url('fonts/Frutiger_bold.ttf') format('truetype'); /* Path to your font file */
   font-weight: normal;
   font-style: normal;
 }

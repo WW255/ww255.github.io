@@ -5,7 +5,7 @@ body{
 	height: 100%;
 	margin: 0;
 	background-image: linear-gradient(to bottom, #00001a,#3b3c7d);
-	background-attachment: fixed;
+	background-attachment: scroll;
 }
 
 @font-face {
@@ -19,13 +19,14 @@ body{
 /* Start */
 
 #start{
-	margin: 10% auto auto 10%;
+	margin: 5% auto auto 10%;
 }
 
 .subtitle{ /* lol */
 	font-family: bitcount, monospace;
 	font-weight: 500;
 	color: #FAFAFA;
+	display: inline-block;
 }
 
 .rainbow{
@@ -37,7 +38,7 @@ body{
 
 #title{
 	transition: 1s;
-	margin-top: 0;
+	margin: 0;
 	font-family: 'Trebuchet MS', sans-serif;
 	font-size: 10em;
 	background-image: linear-gradient(to right, #fcba03,#fce803);
@@ -60,11 +61,11 @@ body{
 }
 
 @keyframes rainbow-anim{
-	0% {background-image: linear-gradient(red,orange,yellow,green)}
-	25% {background-image: linear-gradient(yellow,green,blue,indigo)}
-	50% {background-image: linear-gradient(green,blue,indigo,violet)}
-	75% {background-image: linear-gradient(indigo,violet,red,orange)}
-	100% {background-image: linear-gradient(red,orange,yellow,green)}
+	0% {background-image: linear-gradient(red,orange)}
+	25% {background-image: linear-gradient(yellow,green)}
+	50% {background-image: linear-gradient(blue,indigo)}
+	75% {background-image: linear-gradient(violet,red)}
+	100% {background-image: linear-gradient(red,orange)}
 }
 /* Background */
 
@@ -80,6 +81,7 @@ svg{
 circle{
 	fill: white;
 	animation: pulse_star 6s infinite;
+	opacity: 50%;
 }
 
 @keyframes pulse_star{
@@ -88,18 +90,54 @@ circle{
 	100% {fill: #dbc2fc}
 }
 
+/* Stars in the middle */
+
+#stars_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+}
+
+#stars{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	height: 5vh;
+}
+
+#stars img{
+	opacity: 75%;
+	transition: all 1s;
+}
+
+#stars img:hover{
+	transform: rotateZ(5deg);
+}
+
+
 /* Items */
 
-#pick{
-	margin 0;
-	width: 100%;
+#list{
+	margin: 0;
+	margin-left: 10%;
 }
 
-.item{
-	display: inline-block;
-	margin: 0 10%;
+#list p{
+	font-family: monospace;
+	color: #FAFAFA;
+	font-size: 2em;
 }
 
-.show_me{
-	display: flex;
+#list a{
+	font-family: 'bitcount';
+	display: block;
+	text-decoration: none;
+	color: pink;
+	font-size: 2em;
+}
+
+#list a:hover{
+	color: #FFFAFA;
 }

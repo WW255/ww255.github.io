@@ -1,14 +1,16 @@
 @media screen and (max-width: 900px){
 	#frame{
-		width: 100% !important;
+		width: 100%;
 	}
 	#left_side{
 		width: 10vw; height: 10vw;
+		margin-right: 3vw;
 		clip-path: circle(50%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin: 1vh;
+		overflow: visible;
 	}
 	#far-right{
 		gap: 3vw !important;

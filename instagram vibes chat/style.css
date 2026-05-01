@@ -19,7 +19,7 @@ body{
 
 #frame{
 	width: 32vw;
-	height: 100%;
+	height: 100dvh;
 	background-color: #000;
 	position: fixed;
 	display: block;
@@ -30,12 +30,12 @@ body{
 	width: 100%; height: 8vh;
 	box-sizing: border-box;
 	top: 0;
-	position: sticky;
 	padding: 0 5% 0 5%;
 	background-color: #000;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex: 0 0 auto;
 }
 
 #contact{
@@ -47,8 +47,8 @@ body{
 }
 
 #contact img{
-	height: 2.3vw;
-	width: 2.3vw;
+	height: 2vw;
+	width: 2vw;
 	background-color: white;
 	clip-path: circle(50%);
 }
@@ -69,7 +69,7 @@ body{
 #user-lastseen h3{
 	font-size: 0.75em;
 	font-weight: 400;
-	color: lightgray;
+	color: #a7a7a7;
 	margin: 0;
 }
 
@@ -86,10 +86,11 @@ body{
 #chat{
 	box-sizing: border-box;
 	width: 100%;
-	height: 100%;
-	padding: 1vh 2vw 25vh 2vw;
+	height: 100dvh;
+	padding: 1vh 1vw 25vh 1vw;
 	overflow: auto;
 	scrollbar-width: none;
+	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 
@@ -107,7 +108,7 @@ body{
 	box-sizing: border-box;
 	bottom: 3vh;
 	position: absolute;
-	padding: 0 5% 0 5%;
+	padding: 0 1vw 0 1vw;
 }
 
 #hotbar{
@@ -129,17 +130,17 @@ body{
 
 .camera{
 	background: #0892F5;
-	--background: radial-gradient(circle,rgba(8, 146, 245, 1) 0%, rgba(0, 141, 241, 1) 50%, rgba(8, 146, 245, 1) 100%);
 }
 
 .magnifying_glass{
 	background: #FFF;
+	animation: pop 0.1s linear;
 }
 
 #right_side{
 	display: flex;
 	margin-left: auto;
-	margin-right: 1.5vw;
+	margin-right: 1vw;
 }
 
 #images{
@@ -184,4 +185,9 @@ input{
 @keyframes spin{
 	0%{transform: rotate(-45deg);}
 	100%{transform: rotate(0deg);}
+}
+
+@keyframes pop{
+	0%{transform: scale(1.25);}
+	100%{transform: scale(1)}
 }

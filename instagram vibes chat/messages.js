@@ -32,14 +32,14 @@ function addMsg(){
 /* Sei sim como q interpola, mas não tava caindo a ficha em como q traduzo a matemática
 pro código */
 
-const startColor = { r: 240, g: 0,   b: 115 };  // rosa
-const endColor   = { r: 55, g: 151, b: 240 };   // azul
+const startColor = { h: 329, s: 75, l: 56 };		// rosa
+const endColor   = { h: 240, s: 100, l: 57 }; // azul
 
 function interpolateColor(start, end, factor) {
   return {
-    r: Math.round(start.r + (end.r - start.r) * factor),
-    g: Math.round(start.g + (end.g - start.g) * factor),
-    b: Math.round(start.b + (end.b - start.b) * factor),
+    h: Math.round(start.h + (end.h - start.h) * factor),
+    s: Math.round(start.s + (end.s - start.s) * factor),
+    l: Math.round(start.l + (end.l - start.l) * factor),
   };
 }
 
@@ -58,7 +58,7 @@ function updateColors() {
 
     const color = interpolateColor(startColor, endColor, factor);
     
-    msg.style.backgroundColor = `rgb(${color.r}, ${color.g}, ${color.b})`;
+    msg.style.backgroundColor = `hsl(${color.h}, ${color.s}%, ${color.l}%)`;
   });
 }
 
