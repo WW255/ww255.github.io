@@ -13,7 +13,6 @@ body{
 	margin: 0;
 	background-image: linear-gradient(to bottom, #00001a,#3b3c7d);
 	background-attachment: scroll;
-	overflow: hidden;
 }
 
 @font-face {
