@@ -1,0 +1,11 @@
+{
+  "name": "Instagram /fake",
+  "icons": [
+    {
+      "src": "/asterisk.svg",
+      "type": "image/svg+xml",
+      "sizes": "800x800"
+    }
+  ],
+  "display": "standalone"
+}
