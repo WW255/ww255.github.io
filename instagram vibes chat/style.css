@@ -1,6 +1,5 @@
 body{
 	width: 100%;height: 100%; margin: 0;
- 	font-family: sans-serif;
  	background: #111;
  	color: #FFF;
  	display: flex;
@@ -14,7 +13,7 @@ body{
 }
 
 *{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', 'helvetica', sans-serif;
 }
 
 #frame{
