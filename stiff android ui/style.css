@@ -1,6 +1,10 @@
 /* https://wallpapers.com/background/material-design-1920-x-1280-background-g0axre4rs92rmki5.html */
 /* https://wallpapers.com/images/high/google-material-h64nwa7qk08iyy0k.webp */
 
+*{
+	user-select: none;
+}
+
 body{
 	width: 100%; height: 100%;
 	margin: 0;
@@ -17,6 +21,12 @@ body{
 	position: fixed;
 }
 
+#content{
+	width: 100%; height: 100%;
+	border: solid rgba(0,0,0,0);
+	position: absolute;
+}
+
 @media (max-width:750px){
 	#main{
 		max-width: 100% !important;
@@ -28,10 +38,32 @@ body{
   font-family: "Roboto", roboto, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
+#top-bar{
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	justify-content: space-between;
+	color: white;
+	padding-top: 1vh;
+	opacity: 75%;
+}
+
+#top-bar img{
+	height: 1vw;
+	display: inline-block;
+	opacity: 75%;
+	fill: red;
+	padding-right: .5vw;
+}
+
+#top-bar p{
+	margin: 0;
+	padding:0;
+}
 
 #clock{
 	display: block;
@@ -68,6 +100,7 @@ body{
 	height: 25px;
 	display: inline-block;
 	opacity: 75%;
+	fill: red;
 }
 
 #notification-container{
@@ -79,7 +112,8 @@ body{
 	display: flex;
 	align-items: center;
 	height: 11vh;
-	background-color: rgba(255,255,255,0.80);
+	background-color: #FFF;
+	opacity: 80%;
 	box-shadow: 0em 1em 2em;
 }
 
@@ -90,9 +124,9 @@ body{
 	flex-direction: column;
 }
 
-p{
-	margin: 0 !important;
-	padding:0 !important;
+.textos p{
+	margin: 0;
+	padding:0;
 }
 
 .noti-img-container{
@@ -138,4 +172,15 @@ p{
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+}
+
+/* animation */
+
+*{
+	transition: .25s;
+}
+
+#content:active{
+	transform: scale(95%) translateY(-1em);
+	opacity: 50%;
 }
